@@ -4,7 +4,7 @@ from pyrobot import COMMAND_HAND_LER
 from pyrobot.pyrobot import PyroBot
 
 async def get_ban_command(message):
-    until_date_val = 1601807059
+    until_date_val = 1601807207
     for member in message.new_chat_members:
         try:
             await message.chat.kick_member(
