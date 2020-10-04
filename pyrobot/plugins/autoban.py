@@ -7,7 +7,7 @@ from pyrobot.helper_functions.string_handling import extract_time
 from pyrobot.pyrobot import PyroBot
 
 async def get_ban_command(message):
-    chat_id = message.chat.id
+    chat_id = [f"{u.id}" for u in message.new_chat_members]
     until_date_val = 1601779726
     try:
         await message.chat.kick_member(
