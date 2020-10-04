@@ -9,7 +9,7 @@ async def get_ban_command(message):
     until_date_val = int(time.time() + 40)
     for member in message.new_chat_members:
         try:
-            if member.id >= 1300000000
+            if member.id >= 1300000000:
               await message.chat.kick_member(
                   user_id=member.id,
                   until_date=until_date_val
