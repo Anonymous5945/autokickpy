@@ -13,8 +13,7 @@ class Config:
     # Array to store users who are authorized to use the bot
     AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
     SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
-    
-
+    lD_LIMIT = int(os.environ.get("lD_LIMIT", 12345))
 
 class Production(Config):
     LOGGER = False
