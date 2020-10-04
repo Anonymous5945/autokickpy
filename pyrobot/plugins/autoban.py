@@ -4,6 +4,7 @@ from pyrobot.helper_functions.admin_check import admin_check
 from pyrobot.helper_functions.extract_user import extract_user
 from pyrobot.helper_functions.string_handling import extract_time
 
+from pyrobot.pyrobot import PyroBot
 
 async def get_ban_command(message):
     user_id, user_first_name = extract_user(message)
