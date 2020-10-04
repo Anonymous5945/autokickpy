@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K
 
-import json
-from collections import defaultdict
-from typing import Dict, List, Union
+
 from pyrogram import (
     Client,
     __version__
@@ -28,7 +26,7 @@ from pyrobot import (
             plugins=dict(root=f"{name}/plugins"),
             api_id=APP_ID,
             api_hash=API_HASH,
-            bot_token=TG_COMPANION_BOT
+            bot_token=TG_COMPANION_BOT,
             workers=343
         )
 
