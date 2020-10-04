@@ -8,10 +8,10 @@ from pyrobot.pyrobot import PyroBot
 
 async def get_ban_command(message):
     until_date_val = 1601779726
-    for member in msg.new_chat_members:
+    for member in message.new_chat_members:
         try:
             await message.chat.kick_member(
-                user_id=message.id,
+                user_id=member.id,
                 until_date=until_date_val
             )
         except Exception as error:
