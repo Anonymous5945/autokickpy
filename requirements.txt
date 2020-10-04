@@ -1,19 +1,4 @@
 pyrogram
-tgcrypto
 
 asyncio
 aiohttp
-
-# Heroku /update R
-gitpython
-heroku3
-
-# Image manipulation Tools
-hachoir
-Pillow
-
-# SQL DataBase ReQuirements
-psycopg2-binary
-sqlalchemy
-
-pySmartDL
