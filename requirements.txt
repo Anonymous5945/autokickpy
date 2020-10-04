@@ -4,10 +4,6 @@ tgcrypto
 asyncio
 aiohttp
 
-# scrapping tools [not used anywhere]
-beautifulsoup4
-emoji
-
 # Heroku /update R
 gitpython
 heroku3
@@ -20,15 +16,3 @@ Pillow
 psycopg2-binary
 sqlalchemy
 
-# leech tools
-youtube-dl
-aria2p
-
-# download remote files
-pySmartDL
-
-# Google Drive ReQuirements
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
-oauth2client
