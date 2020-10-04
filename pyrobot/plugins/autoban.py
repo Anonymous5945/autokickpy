@@ -3,13 +3,13 @@ from pyrogram import Client, filters
 
 from pyrobot.pyrobot import PyroBot
 
-from pyrobot import AUTH_CHANNEL
+from pyrobot import AUTH_CHANNEL, lD_LIMIT
 
 async def get_ban_command(message):
-    until_date_val = int(time.time() + 40)
+    until_date_val = int(time.time() + 31)
     for member in message.new_chat_members:
         try:
-            if member.id >= 1300000000:
+            if member.id >= lD_LIMIT:
               await message.chat.kick_member(
                   user_id=member.id,
                   until_date=until_date_val
