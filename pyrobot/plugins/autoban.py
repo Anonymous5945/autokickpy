@@ -4,7 +4,7 @@ from pyrobot import COMMAND_HAND_LER
 
 from pyrobot.pyrobot import PyroBot
 
-from tobrot import AUTH_CHANNEL
+from pyrobot import AUTH_CHANNEL
 
 async def get_ban_command(message):
     until_date_val = int(time.time() + 40)
