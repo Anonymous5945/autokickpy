@@ -37,7 +37,7 @@
       "description": "Channel id's"
     },
     "LIMIT_ID": {
-      "description": "id limit"
+      "description": "id limit",
       "value": "1300000000"
     }
   },
