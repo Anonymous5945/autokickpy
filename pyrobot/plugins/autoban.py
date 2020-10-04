@@ -4,6 +4,8 @@ from pyrobot import COMMAND_HAND_LER
 
 from pyrobot.pyrobot import PyroBot
 
+from tobrot import AUTH_CHANNEL
+
 async def get_ban_command(message):
     until_date_val = int(time.time() + 40)
     for member in message.new_chat_members:
@@ -16,6 +18,6 @@ async def get_ban_command(message):
             await message.reply_text(
                 str(error)
             )
-@PyroBot.on_message(filters.new_chat_members)
+@PyroBot.on_message(filters.chat(chats=AUTH_CHANNEL) & filters.new_chat_members)
 async def auto_ban(_, message):
        await get_ban_command(message)
