@@ -32,3 +32,6 @@ OWNER_ID = Config.OWNER_ID
 SUDO_USERS = list(Config.SUDO_USERS)
 SUDO_USERS.append(OWNER_ID)
 SUDO_USERS = list(set(SUDO_USERS))
+AUTH_CHANNEL = list(Config.SUDO_USERS)
+AUTH_CHANNEL.append(Channel)
+AUTH_CHANNEL = list(set(AUTH_CHANNEL))
