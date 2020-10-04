@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 
 from pyrobot.pyrobot import PyroBot
 
-from pyrobot import AUTH_CHANNEL, lD_LIMIT
+from pyrobot import AUTH_CHANNEL, LIMIT_ID
 
 async def get_ban_command(message):
     until_date_val = int(time.time() + 31)
