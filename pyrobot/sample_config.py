@@ -12,6 +12,7 @@ class Config:
     OWNER_ID = int(os.environ.get("OWNER_ID", "395357593"))
     # Array to store users who are authorized to use the bot
     AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
     
 
 
