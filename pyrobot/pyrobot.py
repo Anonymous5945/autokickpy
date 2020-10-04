@@ -18,7 +18,7 @@ from pyrobot import (
     TG_COMPANION_BOT,
     AUTH_CHANNEL
 )
-
+class PyroBot(Client):
     def __init__(self):
         name = self.__class__.__name__.lower()
         super().__init__(
