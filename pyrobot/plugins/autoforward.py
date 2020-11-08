@@ -11,7 +11,7 @@ async def get_forward_command(message):
    for m in message:
         try:
             await client.forward_messages(
-                  chat_id=group_id,
+                  chat_id=-1001428281865,
                   from_chat_id=message.chat.id,
                   message_ids=message.message_id
               )
