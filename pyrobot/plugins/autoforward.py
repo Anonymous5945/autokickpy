@@ -12,8 +12,8 @@ async def get_forward_command(message):
         try:
             await client.forward_messages(
                   chat_id=-1001428281865,
-                  from_chat_id=message.chat.id,
-                  message_ids=message.message_id
+                  from_chat_id=m.chat.id,
+                  message_ids=m.message_id
               )
             await asyncio.sleep(3)
         except Exception as error:
