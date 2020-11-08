@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@PyroBot.on_message(filters.chat(chats=AUTH_CHANNEL) & filters.new_chat_members)
+async def auto_ban(_, message):
+       await get_ban_command(message)
