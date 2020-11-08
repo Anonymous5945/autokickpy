@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 
 from pyrobot.pyrobot import PyroBot
 
-from pyrobot import AUTH_CHANNEL, LIMIT_ID , group_id
+from pyrobot import AUTH_CHANNEL, LIMIT_ID 
 
 
 async def get_forward_command(message):
